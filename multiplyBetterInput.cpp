@@ -10,9 +10,9 @@ void multiplyBetterInput() {
     get_VelMax(seq);                       //  get VelMax for multiplyParticle
     for (int i=0; i < multiplyNumber; i++) {
         Particle particle;
-        inputParticle(particle, 0, seq);
+        inputParticle(particle, i % inputSize, seq);
         initializeParticle(particle);
-        multiplyParticle(particle, nPop - multiplyNumber + i);
+        multiplyParticle(particle, Population - multiplyNumber + i);
     }
 }
 

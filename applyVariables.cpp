@@ -8,12 +8,15 @@ Particle *particle;
 ANGLE *angle;
 myRep rep;
 int *sortAns;
+REP_COUNT *rep_count;
 
 void applyVariable(){
-    particle = new Particle[nPop];                       // nPop = inputFilesNumber + multiplyFilesNumber
-    angle = new ANGLE[nRep + 100];
-    sortAns = new int[nRep + 100];
+    particle = new Particle[Population];                       // Population = inputFilesNumber + multiplyFilesNumber
+    angle = new ANGLE[nRep * 2  ];
+    sortAns = new int[nRep * 2];
+    rep_count = new REP_COUNT[nRep + 100];
     angle[0].id = -1;
+
 }
 
 void releaseSpace(double **p, const int &n){

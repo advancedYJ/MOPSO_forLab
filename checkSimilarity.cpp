@@ -7,11 +7,11 @@
 void checkAllParticleSimilarity(Particle *particle){
     pthread_t tids[tidSize];
     int haveRun=0;
-    while (haveRun < nPop){
-        for (int i=0; i<tidSize && haveRun+i<nPop; i++){
+    while (haveRun < Population){
+        for (int i=0; i<tidSize && haveRun+i<Population; i++){
             pthread_create(&tids[i], NULL, checkOneParticleSimilarity, (void *) &particle[haveRun+i]);
         }
-        for (int i=0; i<tidSize && haveRun+i<nPop; i++){
+        for (int i=0; i<tidSize && haveRun+i<Population; i++){
             pthread_join(tids[i], NULL);
         }
         haveRun += tidSize;

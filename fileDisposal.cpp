@@ -95,7 +95,7 @@ void printParticleCost(Particle * particle, int iterator){
         exit(-1);
     }
     fprintf(outFile, "iterator=%d\n", iterator);
-    for (int i=0; i<nPop; i++){
+    for (int i=0; i<Population; i++){
         fprintf(outFile, "i=%d ", i);
         for (int j=0; j<objectiveNumber; j++){
             fprintf(outFile, "cost%d =%10.3f    ", j, particle[i].Cost[j]);

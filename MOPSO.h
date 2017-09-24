@@ -14,6 +14,7 @@
 #include <iomanip>
 #include <stdexcept>
 #include <limits>
+#include <algorithm>
 
 using namespace std;
 
@@ -25,6 +26,7 @@ struct POINT;
 struct VECTOR;
 struct ANGLE;
 struct EnergyValueStruct;
+struct REP_COUNT;
 template <typename _MD>
 struct commonStruct;
 template <typename _MD>
@@ -119,7 +121,7 @@ void putNewParticleIntoRep(Particle * particle, myRep & rep, int iterator);
     // if return true then can put
 bool canPutIntoRep(double *Cost, myRep & rep);
 
-void sieveRep(myRep & rep);         //  if there are too many paticles in rep, restrict it in a set value
+void sieveRep(Particle *particle, myRep &rep);         //  if there are too many paticles in rep, restrict it in a set value
 
 
 //  MOPSOAidFunction
@@ -150,6 +152,16 @@ void checkP(double *tmp, double *tmpV, int n);
 
     //  get the right rep_h for this update time
 int rouletteWheel(myRep & rep);
+
+// get GBest through SRD
+int getGBest(Particle &particle, myRep &rep);
+
+// get SRD
+double getSRD(double **f, int k, int size);
+
+// unitize 归一化
+void unitFunction(double **f, int n, int m);
+
 
     //  get the w
 double getInertiaWeight(double it,double MaxIt);
@@ -462,8 +474,9 @@ extern double VelMax;             //  =20 without rama_map
 
 
 // MOPSO Settings
-extern int nPop;                  // Population Size
+extern int inputSize;                  // Population Size
 extern const int nRep;                // Repository Size
+extern const int Population;
 extern int  MaxIt;          // Maximum Number of Iterations
 extern int multiplyNumber; // copy the best input particle
 extern const double Criterion;
@@ -483,8 +496,13 @@ extern const int bufferLen;
 extern const double wMin;                        //  Inertia Weight
 extern const double wMax;
 extern const double wDamp;                       //  Inertia Weight Damping Ratio
-extern const double c1;                 //  Personal Learning Coefficient
-extern const double c2;                 //  Global Learning Coefficient
+
+//extern const double c1;                 //  Personal Learning Coefficient
+//extern const double c2;                 //  Global Learning Coefficient
+extern const double c1max;
+extern const double c1min;
+extern const double c2max;
+extern const double c2min;
 
 extern const double Alpha;       //Grid Inflation Parameter
 extern const int nGrid;               //Number of Grids per each Dimension
@@ -503,6 +521,7 @@ extern Particle *particle;
 extern myRep rep;
 extern ANGLE *angle;
 extern int *sortAns;
+extern REP_COUNT *rep_count;
 
 //  struct definition
 // pBest
@@ -575,6 +594,11 @@ template <typename _MD>
 struct commonStruct{
     _MD value;
     int id;
+};
+
+struct REP_COUNT{
+    int id, amount;
+    bool operator<(const REP_COUNT &rhs) { return amount > rhs.amount;}
 };
 
 template <typename _MD>

@@ -1,7 +1,7 @@
 #include "MOPSO.h"
 
 void initializeParticles(Particle *particle){
-    for (int j=0; j<nPop; j++){
+    for (int j=0; j<Population; j++){
         //  initialize Velocity
         initializeParticle(particle[j]);
         

@@ -1,29 +1,32 @@
 #include "MOPSO.h"
 
-extern int nPop;
-
 void PSOAdaptionForPhi(Particle &particle, myRep &rep, int it) {
     double w = getInertiaWeight(it-1, MaxIt);       //  get inertia wight
     int len = particle.sizeOfPosition;
-    int h = rouletteWheel(rep);
+    // int h = rouletteWheel(rep);
+    int h = getGBest(particle, rep);
     cpyDoubleArray(particle.old_position, particle.Position, len);
     myRep ::iterator a = rep.begin();
     for (int i=0; i<h; i++) a++;
     //  calculate the new Velocity
     for (int i=0; i<len; i++){
         double r1 = rand() / double(RAND_MAX) , r2 = rand() / double(RAND_MAX) ;
+        double tmp = acos(-2 * it / MaxIt + 1) / PI;
+        double c1 = c1max - (c1max - c1min) * (1 - tmp);
+        double c2 = c2min + (c2max - c2min) * (1 - tmp);
         if(it==0 && i%3 != 1) particle.Velocity[i] = rand() / double(RAND_MAX);
         particle.Velocity[i] = w * particle.Velocity[i] +
-                               c1*r1* (particle.Best.Position[i] - particle.Position[i]) +
-                               c2*r2 * (a->Position[i] - particle.Position[i]);
+                               c1 * r1* (particle.Best.Position[i] - particle.Position[i]) +
+                               c2 * r2 * (a->Position[i] - particle.Position[i]);
     }
-
+    //  check velociti range
     checkV(particle.Velocity, len);
 
     //  calculate the new position
     for (int i=0; i<len; i++)   particle.Position[i] += particle.Velocity[i];
-
+    //  check position range
     checkP(particle.Position, particle.Velocity, len);
+
 }
 
 void PSOAdaptionForXYZ(Particle &particle, myRep &rep, int it){
@@ -53,11 +56,11 @@ void PSOAdaptionForXYZ(Particle &particle, myRep &rep, int it){
 void getAllParticleCost(Particle * particle){
     pthread_t tids[tidSize];
     int haveRun=0;
-    while (haveRun < nPop){
-        for (int i=0; i<tidSize && haveRun+i<nPop; i++){
+    while (haveRun < Population){
+        for (int i=0; i<tidSize && haveRun+i<Population; i++){
             pthread_create(&tids[i], NULL, getAParticleCost, (void *) &particle[haveRun+i]);
         }
-        for (int i=0; i<tidSize && haveRun+i<nPop; i++){
+        for (int i=0; i<tidSize && haveRun+i<Population; i++){
             pthread_join(tids[i], NULL);
         }
         haveRun += tidSize;
@@ -79,7 +82,7 @@ void *getAParticleCost(void *p){
 }
 
 /*void getAllParticleCostForTest(Particle * particle){                   // calculate f(x)
-    for (int i=0; i<nPop; i++)
+    for (int i=0; i<Population; i++)
     {
         int len = particle[i].sizeOfAddO_origin;
         double ans1 = 0, ans2=0;
@@ -108,11 +111,11 @@ bool isDominated(double *cost1, double *cost2){
 }                                                       // but it will generate many same paticles in the rep
                                                         // so I change it to true
 void decideDominated(Particle * particle){
-    for (int i=0; i<nPop; i++)
+    for (int i=0; i<Population; i++)
         particle[i].dominated = 0;
 
-    for (int i=0; i<nPop; i++)
-        for (int j=0; j<nPop; j++) {
+    for (int i=0; i<Population; i++)
+        for (int j=0; j<Population; j++) {
             if (i==j) continue;
             if (isDominated(particle[i].Cost, particle[j].Cost))
                 particle[i].dominated = 1;
@@ -121,7 +124,7 @@ void decideDominated(Particle * particle){
 
 
 void updatePBest(Particle * particle){
-    for (int i=0; i<nPop; i++){
+    for (int i=0; i<Population; i++){
         int update=0;               //  update=-1  :  pre pBest is better;  update=1: new particle is better
         if (isDominated(particle[i].Cost, particle[i].Best.Cost))  update = -1;
         if (isDominated(particle[i].Best.Cost, particle[i].Cost))  update = 1;

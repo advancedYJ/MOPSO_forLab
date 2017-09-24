@@ -1,4 +1,4 @@
-# Install script for directory: E:/C++/MOPSO_CODE
+# Install script for directory: E:/Github/MOPSO
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "E:/C++/MOPSO_CODE/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/Github/MOPSO/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

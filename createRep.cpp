@@ -10,11 +10,11 @@ void updateRep(Particle *particle, myRep &rep, int loopTimes) {
     printParticleCost(particle, loopTimes);
     if (loopTimes == 1) { rep.clear(); }
     putNewParticleIntoRep(particle, rep, loopTimes);          //  put particles into rep
-    sieveRep(rep);
+    sieveRep(particle, rep);
 }
 
 void putNewParticleIntoRep(Particle * particle, myRep & rep, int iterator){
-    for (int i=0; i<nPop; i++)
+    for (int i=0; i<Population; i++)
         if (!particle[i].dominated){
             if (canPutIntoRep(particle[i].Cost, rep)){
                 Rep tmp;
@@ -55,11 +55,25 @@ bool canPutIntoRep(double *cost, myRep & rep){
 }
 
 
-void sieveRep(myRep & rep){
+void sieveRep(Particle *particle, myRep &rep) {
+    // clear rep_count from last loop
+    int size = rep.size();
+    for (int i = 0; i < size; i++){
+        rep_count[i].amount = 0;
+        rep_count[i].id = i;
+    }
+    for (int i = 0; i < Population; i++){
+        int h = getGBest(particle[i], rep);
+        rep_count[h].amount++;
+    }
+    sort(rep_count, rep_count + size);
+    int k = 0;
     while (rep.size() > nRep){
-        int h = rouletteWheel(rep);
+        int h = rep_count[k].id;
         myRep ::iterator itr = rep.begin();
         for (int i=0; i<h; i++) itr++;
         rep.erase(itr);
+
+        k++;
     }
 }

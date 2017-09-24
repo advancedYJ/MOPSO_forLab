@@ -96,6 +96,71 @@ int rouletteWheel(myRep & rep){
     return rand() % sz;
 }
 
+
+// SRD: sqrt(rep[i].cost - particle.cost), minSRD is the best rep member for particle
+int getGBest(Particle &particle, myRep &rep) {
+    int size = static_cast<int>(rep.size());
+
+    double **f;            //  前size个是rep中元素的cost，最后一个放当前particle的cost  f[size+1][objectiveNumber]
+    f = new double *[size+1];
+    for (int i = 0; i < size+1; i++)
+        f[i] = new double [objectiveNumber];
+
+    myRep ::iterator a = rep.begin();
+    for (int i = 0; i < size; i++){
+        for (int j = 0; j < objectiveNumber; j++)
+            f[i][j] = a->Cost[j];
+        a++;
+    }
+    for (int j = 0; j < objectiveNumber; j++)
+        f[size][j] = particle.Cost[j];
+
+    unitFunction(f, size+1, objectiveNumber);
+
+    double minSRD = 1000;
+    int ans = 0;
+
+    for (int i = 0; i < size; i++){
+        double tmp = getSRD(f, i, size);
+        if ( tmp < minSRD){
+            ans = i;
+            minSRD = tmp;
+        }
+    }
+    return  ans;
+}
+
+void unitFunction(double **f, int n, int m){
+    double maxCost[m], minCost[m];      // minCost[0] : the min value of the first energy function
+    for (int i = 0; i < m; i++){
+        maxCost[i] = -9999999999;
+        minCost[i] = std::numeric_limits<double>::max();
+    }
+
+    for (int i = 0; i < n; i++)
+        for (int j = 0; j< m; j++) {
+            if (f[i][j] > maxCost[j])
+                maxCost[j] = f[i][j];
+            if (f[i][j] < minCost[j])
+                minCost[j] = f[i][j];
+        }
+
+    /*
+     * calculate newCost for every f
+     */
+    for (int i = 0; i < n; i++)
+        for (int j = 0; j < m; j++)
+            f[i][j] = (f[i][j] - minCost[j]) / (maxCost[j] - minCost[j]);
+}
+
+double getSRD(double **f, int k, int size) {
+    double ans = 0;
+    for (int i = 0; i < objectiveNumber; i++){
+        ans += sqrt(fabs(f[size][i] - f[k][i]));        //  f[size][i] is the particle's cost
+    }
+    return ans;
+}
+
 double dis1(double x, double y, double z){
     double ans = (x-1)*(x-1) + (y-5)*(y-5) + (z+12)*(z+12);
     return sqrt(ans);

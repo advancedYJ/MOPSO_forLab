@@ -16,7 +16,7 @@ void inputParticles(Particle *particle){
     else
         VelMax =1.2;
 
-    for (int i = 0; i < nPop; i++) {
+    for (int i = 0; i < Population; i++) {
         inputParticle(particle[i], i, seq);
         //printParticle(&particle[i]);
     }  // input the particles data

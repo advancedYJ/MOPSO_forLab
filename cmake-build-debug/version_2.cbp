@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="E:/C++/MOPSO_CODE/cmake-build-debug"/>
+				<Option working_dir="E:/Github/MOPSO/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/C++/MOPSO_CODE/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/C++/MOPSO_CODE/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/C++/MOPSO_CODE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/C++/MOPSO_CODE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/Github/MOPSO/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/Github/MOPSO/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/Github/MOPSO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/Github/MOPSO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="version_2">
-				<Option output="E:/C++/MOPSO_CODE/cmake-build-debug/version_2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="E:/C++/MOPSO_CODE/cmake-build-debug"/>
+				<Option output="E:/Github/MOPSO/cmake-build-debug/version_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Github/MOPSO/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -33,15 +33,15 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/C++/MOPSO_CODE/cmake-build-debug/Makefile&quot;  VERBOSE=1 version_2"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/C++/MOPSO_CODE/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/C++/MOPSO_CODE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/C++/MOPSO_CODE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/Github/MOPSO/cmake-build-debug/Makefile&quot;  VERBOSE=1 version_2"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/Github/MOPSO/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/Github/MOPSO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/Github/MOPSO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="version_2/fast">
-				<Option output="E:/C++/MOPSO_CODE/cmake-build-debug/version_2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="E:/C++/MOPSO_CODE/cmake-build-debug"/>
+				<Option output="E:/Github/MOPSO/cmake-build-debug/version_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Github/MOPSO/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -55,103 +55,103 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/C++/MOPSO_CODE/cmake-build-debug/Makefile&quot;  VERBOSE=1 version_2/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/C++/MOPSO_CODE/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/C++/MOPSO_CODE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/C++/MOPSO_CODE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/Github/MOPSO/cmake-build-debug/Makefile&quot;  VERBOSE=1 version_2/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/Github/MOPSO/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/Github/MOPSO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/Github/MOPSO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="E:/C++/MOPSO_CODE/cmake-build-debug"/>
+				<Option working_dir="E:/Github/MOPSO/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/C++/MOPSO_CODE/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/C++/MOPSO_CODE/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/C++/MOPSO_CODE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/C++/MOPSO_CODE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/Github/MOPSO/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/Github/MOPSO/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/Github/MOPSO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/Github/MOPSO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="E:/C++/MOPSO_CODE/cmake-build-debug"/>
+				<Option working_dir="E:/Github/MOPSO/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/C++/MOPSO_CODE/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/C++/MOPSO_CODE/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/C++/MOPSO_CODE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/C++/MOPSO_CODE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/Github/MOPSO/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/Github/MOPSO/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/Github/MOPSO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/Github/MOPSO/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/C++/MOPSO_CODE/CMakeLists.txt">
+		<Unit filename="E:/Github/MOPSO/CMakeLists.txt">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="E:/C++/MOPSO_CODE/Debug.cpp">
+		<Unit filename="E:/Github/MOPSO/Debug.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="E:/C++/MOPSO_CODE/MOPSO.h">
+		<Unit filename="E:/Github/MOPSO/MOPSO.h">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="E:/C++/MOPSO_CODE/MOPSOAidFunction.cpp">
+		<Unit filename="E:/Github/MOPSO/MOPSOAidFunction.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="E:/C++/MOPSO_CODE/MOPSOFunction.cpp">
+		<Unit filename="E:/Github/MOPSO/MOPSOFunction.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="E:/C++/MOPSO_CODE/Matrix.cpp">
+		<Unit filename="E:/Github/MOPSO/Matrix.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="E:/C++/MOPSO_CODE/applyVariables.cpp">
+		<Unit filename="E:/Github/MOPSO/applyVariables.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="E:/C++/MOPSO_CODE/checkSimilarity.cpp">
+		<Unit filename="E:/Github/MOPSO/checkSimilarity.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="E:/C++/MOPSO_CODE/coordinaryTransform.cpp">
+		<Unit filename="E:/Github/MOPSO/coordinaryTransform.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="E:/C++/MOPSO_CODE/createRep.cpp">
+		<Unit filename="E:/Github/MOPSO/createRep.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="E:/C++/MOPSO_CODE/disposedCodes.cpp">
+		<Unit filename="E:/Github/MOPSO/disposedCodes.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="E:/C++/MOPSO_CODE/fileDisposal.cpp">
+		<Unit filename="E:/Github/MOPSO/fileDisposal.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="E:/C++/MOPSO_CODE/freeUpSpace.cpp">
+		<Unit filename="E:/Github/MOPSO/freeUpSpace.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="E:/C++/MOPSO_CODE/initialization.cpp">
+		<Unit filename="E:/Github/MOPSO/initialization.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="E:/C++/MOPSO_CODE/inputParticles.cpp">
+		<Unit filename="E:/Github/MOPSO/inputParticles.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="E:/C++/MOPSO_CODE/main.cpp">
+		<Unit filename="E:/Github/MOPSO/main.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="E:/C++/MOPSO_CODE/matrixFunction.cpp">
+		<Unit filename="E:/Github/MOPSO/matrixFunction.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="E:/C++/MOPSO_CODE/multiplyBetterInput.cpp">
+		<Unit filename="E:/Github/MOPSO/multiplyBetterInput.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="E:/C++/MOPSO_CODE/parameterSettings.cpp">
+		<Unit filename="E:/Github/MOPSO/parameterSettings.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="E:/C++/MOPSO_CODE/preDispose.cpp">
+		<Unit filename="E:/Github/MOPSO/preDispose.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="E:/C++/MOPSO_CODE/randFixedSum.cpp">
+		<Unit filename="E:/Github/MOPSO/randFixedSum.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="E:/C++/MOPSO_CODE/seiveRep.cpp">
+		<Unit filename="E:/Github/MOPSO/seiveRep.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="E:/C++/MOPSO_CODE/setTime.cpp">
+		<Unit filename="E:/Github/MOPSO/setTime.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="E:/C++/MOPSO_CODE/CMakeLists.txt">
+		<Unit filename="E:/Github/MOPSO/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

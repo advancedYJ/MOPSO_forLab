@@ -4,7 +4,7 @@
 
 #include "MOPSO.h"
 
-int nPop;               // nPop = inputFilesNumber + multiplyFilesNumber
+int inputSize;               // Population = inputFilesNumber + multiplyFilesNumber
 double VelMax;
 char *inputAddress;
 char *answerAddress;
@@ -15,19 +15,19 @@ char **argv;
 
 void preDisposeInputParametersAndFiles(char **argv) {
     // argv: [1]input address, [2]number of particles, [3]loop times
-    getInputParameter(argv, nPop, MaxIt);
+    getInputParameter(argv, inputSize, MaxIt);
     inputAddress = catStrStr(argv[1], "/");
     answerAddress = catStrStr(argv[1], "Answer/");
     logAddress = catStrStr(answerAddress, "log.txt");
     createNewFold();
     disposePDB();
     freopen(logAddress, "w", stdout);
-    nPop += multiplyNumber;
+    multiplyNumber = Population - inputSize;
 }
 
 void disposePDB(){
     createSeqTxt();
-    for (int i=0; i<nPop; i++){
+    for (int i=0; i<Population; i++){
         createParticleTxt(i+1);
         createPhi(i+1);
     }

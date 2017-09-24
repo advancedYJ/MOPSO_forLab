@@ -31,12 +31,13 @@ const int tidSize =2;
 const int objectiveNumber = 3; //  Multiple Obejectives settings, the size of objective function
 const double TM_scoreThreshold = 0.13;
 const int nRep = 50;                // Repository Size
+const int Population = 50;
 const double Criterion = 0.000001;
 const int lambdaLoopTimes = 1000;
 
 const int answerRepNumber = 10;
 //const int  MaxIt = 1;          // Maximum Number of Iterations
-//const int nPop = 2;                  // Population Size
+//const int Population = 2;                  // Population Size
 
 
 const double phi1 = 2.05;
@@ -48,8 +49,13 @@ const int bufferLen = 2048;
 const double wMin = chi;                        // =chi  Inertia Weight
 const double wMax = 1.2;
 const double wDamp=1;                       //  Inertia Weight Damping Ratio
-const double c1 = chi*phi1;                 //  Personal Learning Coefficient
-const double c2 = chi*phi2;                 //  Global Learning Coefficient
+//const double c1 = chi*phi1;                 //  Personal Learning Coefficient
+//const double c2 = chi*phi2;                 //  Global Learning Coefficient
+const double c1max = 0.7;
+const double c1min = 0.4;
+const double c2max = 1.3;
+const double c2min = 0.8;
+
 
 const double Alpha = 0.1;       //Grid Inflation Parameter
 const int nGrid = 10;               //Number of Grids per each Dimension
