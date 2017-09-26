@@ -66,10 +66,8 @@ void cpyDoubleArray(double *& p1, double *& p2, int n){                //  p1,p2
 
 void checkV(double *tmp, int n){
     for (int i=0; i<n; i++) {
-        printf("VelMax = %lf\n", VelMax);
         if (tmp[i] > VelMax) tmp[i] = VelMax;
         else if (tmp[i] < -VelMax) tmp[i] = -VelMax;
-        printf("tmp = %lf\n", tmp[i]);
     }
 }
 

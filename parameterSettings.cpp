@@ -1,7 +1,7 @@
 #include "MOPSO.h"
 
 //  the address of the input data
-const char rootAddress[] = "/home/advanced/MOPSO/";
+const char rootAddress[] = "/home/wangdi/mopso/";
 const char *energyFileAddress = catStrStr(rootAddress, "data/energyFile/");
 const char *tempFileAddress   = catStrStr(energyFileAddress, "tempFile/");
 const char *defaultFileAddress = catStrStr(energyFileAddress, "defaultFile/");

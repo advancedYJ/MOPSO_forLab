@@ -17,7 +17,6 @@ int main(int argc, char *argv[])
     for (int it = 1; it <= MaxIt; it++) {
         printCurrentId(it);
         for (int i = 0; i < Population; i++) {
-            //PSOAdaptionForXYZ(particle[i], rep, it - 1);
             PSOAdaptionForPhi(particle[i], rep, it - 1);            //  apply the PSO formula
             convertRotationToCoordinary(particle[i]);    //  convert rotation to coordinary
         }
@@ -35,4 +34,5 @@ int main(int argc, char *argv[])
 
 /*
 /home/advanced/MOPSO/data/input/TR760 2 2
+ /home/wangdi/data/test_by_zyj/TR783 2 2
  */

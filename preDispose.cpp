@@ -27,7 +27,7 @@ void preDisposeInputParametersAndFiles(char **argv) {
 
 void disposePDB(){
     createSeqTxt();
-    for (int i=0; i<Population; i++){
+    for (int i=0;  i < inputSize; i++){
         createParticleTxt(i+1);
         createPhi(i+1);
     }

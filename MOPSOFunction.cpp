@@ -29,30 +29,6 @@ void PSOAdaptionForPhi(Particle &particle, myRep &rep, int it) {
 
 }
 
-void PSOAdaptionForXYZ(Particle &particle, myRep &rep, int it){
-    double w = getInertiaWeight(it-1, MaxIt);       //  get inertia wight
-    int len = particle.sizeOfAddO_origin;
-    int h = rouletteWheel(rep);
-    myRep ::iterator a = rep.begin();
-    for (int i=0; i<h; i++)
-        a++;
-
-    //  calculate the new Velocity
-    for (int i=0; i<len; i++){
-        double r1 = rand() / double(RAND_MAX) , r2 = rand() / double(RAND_MAX) ;
-        if(it==0 && i%3 != 1) particle.Velocity[i] = rand() / double(RAND_MAX);
-        particle.Velocity[i] = w * particle.Velocity[i] +
-                               c1*r1* (particle.Best.addO_origin[i] - particle.addO_origin[i]) +
-                               c2*r2 * (a->addO_origin[i] - particle.addO_origin[i]);
-    }
-    checkV(particle.Velocity, len);
-
-    //  calculate the new position
-    for (int i=0; i<len; i++)   particle.addO_origin[i] += particle.Velocity[i];
-
-    checkOrigin(particle.addO_origin, particle.Velocity, len);
-}
-
 void getAllParticleCost(Particle * particle){
     pthread_t tids[tidSize];
     int haveRun=0;

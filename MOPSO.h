@@ -96,7 +96,6 @@ void updateRep(Particle *particle, myRep &rep, int loopTimes);
 //  MOPSOFunction
     //  apply the formulation of PSO
 void PSOAdaptionForPhi(Particle &particle, myRep &rep, int it);
-void PSOAdaptionForXYZ(Particle &particle, myRep &rep, int it);
 
     //  decide if particle[i] is dominated, for all i
 void decideDominated(Particle * particle);

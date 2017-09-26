@@ -66,7 +66,7 @@ void sieveRep(Particle *particle, myRep &rep) {
         int h = getGBest(particle[i], rep);
         rep_count[h].amount++;
     }
-    sort(rep_count, rep_count + size);
+    sort(rep_count, rep_count + size);  // sort by rep_count.amount, defined in struct rep_count
     int k = 0;
     while (rep.size() > nRep){
         int h = rep_count[k].id;
