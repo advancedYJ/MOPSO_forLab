@@ -33,6 +33,6 @@ int main(int argc, char *argv[])
 }
 
 /*
-/home/advanced/MOPSO/data/input/TR760 2 2
- /home/wangdi/data/test_by_zyj/TR783 2 2
+In linux terminate:
+ ./AIR /home/advanced/Data/TR829 7 500
  */

@@ -271,6 +271,7 @@ void removeTmp(int index){
 
 double getCost0(int i) {
     //remove("/home/ws/zzZyj/data/temp1.pdb"); remove("default.sc");
+    //printf("Particle ID = %d, Enter getCost0\n", i);
     const char *temp_File = catStrIntStr(tempFileAddress, "temp_", i, ".pdb");
     const char *defaultFile = catStrIntStr(defaultFileAddress, "default", i, ".sc");
     const char *command = catStrStr(scoreAddress, " -database ", databaseAddress," -s ",
@@ -288,13 +289,14 @@ double getCost0(int i) {
     else
         ans = atof(strAns);
     infile.close();
-    cout << "defaultFile = " << defaultFile << endl;
+    //cout << "defaultFile = " << defaultFile << endl;
     removeFile(defaultFile);
+    //printf("Particle ID = %d, Out getCost0\n", i);
     return ans;
 }
 
 double getCost1(int i){
-
+    //printf("Particle ID = %d, Enter getCost1\n", i);
     int r_index,j,k;
  //char *tempFileAddress   = "/home/gengling/MOPSO/data/energyFile/tempFile/";
  //char *QUACKoutFileAddress=  "/home/gengling/MOPSO/data/energyFile/QUACKoutFile/";
@@ -324,11 +326,13 @@ double getCost1(int i){
         removeFile(command2);
         delete command;  delete command1; delete command2;
     }
+    //printf("Particle ID = %d, Out getCost1\n", i);
     return ans;
 }
 
 
 double getCost2(int i){
+    //printf("Particle ID = %d, Enter getCost2\n", i);
     const char *tmpI = catStrIntStr("tmp", i, "");
     const char *temp_File = catStrIntStr(tempFileAddress, "temp_", i, ".pdb");
     const char *charmmFile = charmmFileAddress;
@@ -354,7 +358,7 @@ double getCost2(int i){
     // remove useless file
     removeFile(tmpInp);
     removeFile(tmpOut);
-
+    //printf("Particle ID = %d, Out getCost2\n", i);
     return ans;
 }
 

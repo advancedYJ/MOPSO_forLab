@@ -57,23 +57,35 @@ bool canPutIntoRep(double *cost, myRep & rep){
 
 void sieveRep(Particle *particle, myRep &rep) {
     // clear rep_count from last loop
-    int size = rep.size();
-    for (int i = 0; i < size; i++){
+    printf("Enter seiveRep\n");
+    int rep_size = static_cast<int>(rep.size());
+    if (rep_size < nRep)        // no need to seive or delete
+        return;
+    printf("rep size = %d\n", rep_size);
+
+    for (int i = 0; i < rep_size; i++){
         rep_count[i].amount = 0;
         rep_count[i].id = i;
     }
     for (int i = 0; i < Population; i++){
         int h = getGBest(particle[i], rep);
+        printf("particle : %d, h = %d\n", i, h);
         rep_count[h].amount++;
     }
-    sort(rep_count, rep_count + size);  // sort by rep_count.amount, defined in struct rep_count
-    int k = 0;
-    while (rep.size() > nRep){
-        int h = rep_count[k].id;
-        myRep ::iterator itr = rep.begin();
-        for (int i=0; i<h; i++) itr++;
-        rep.erase(itr);
+    sort(rep_count, rep_count + rep_size);  // sort by rep_count.amount, defined in struct rep_count, larger amount -> need to be deleted
 
-        k++;
+    int *delete_array;      // the rep_id which are to be delete from rep set
+    int delete_size = rep_size - nRep;
+    delete_array = new int [delete_size];
+    for (int i = 0; i < delete_size; i++)
+        delete_array[i] = rep_count[i].id;
+    sort(delete_array, delete_array + delete_size, comp_deleteArray);   // large ID delete first -> avoid error: delete small ID first will lead to error for delete large ID
+
+    for (int i = 0; i < delete_size; i++){                      //  delete extra component in rep
+        int h = delete_array[i];
+        myRep ::iterator itr = rep.begin();
+        for (int j = 0; j < h; j++) itr++;
+        rep.erase(itr);
     }
+    printf("Out seiveRep\n");
 }

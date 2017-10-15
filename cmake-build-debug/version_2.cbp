@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/wangdi/MOPSO_forLab-ImproveFolder_1/cmake-build-debug"/>
+				<Option working_dir="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/wangdi/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wangdi/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/wangdi/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wangdi/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/wangdi/MOPSO_forLab-ImproveFolder_1/cmake-build-debug"/>
+				<Option working_dir="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/wangdi/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wangdi/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/wangdi/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wangdi/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/wangdi/MOPSO_forLab-ImproveFolder_1/cmake-build-debug"/>
+				<Option working_dir="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/wangdi/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wangdi/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/wangdi/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wangdi/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="version_2">
-				<Option output="/home/wangdi/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/version_2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/wangdi/MOPSO_forLab-ImproveFolder_1/cmake-build-debug"/>
+				<Option output="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/version_2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -54,15 +54,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/wangdi/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 version_2"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wangdi/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/wangdi/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wangdi/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 version_2"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="version_2/fast">
-				<Option output="/home/wangdi/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/version_2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/wangdi/MOPSO_forLab-ImproveFolder_1/cmake-build-debug"/>
+				<Option output="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/version_2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -77,83 +77,83 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/wangdi/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 version_2/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wangdi/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/wangdi/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wangdi/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 version_2/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/wangdi/MOPSO_forLab-ImproveFolder_1/CMakeLists.txt">
+		<Unit filename="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/CMakeLists.txt">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="/home/wangdi/MOPSO_forLab-ImproveFolder_1/Debug.cpp">
+		<Unit filename="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/Debug.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="/home/wangdi/MOPSO_forLab-ImproveFolder_1/MOPSO.h">
+		<Unit filename="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/MOPSO.h">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="/home/wangdi/MOPSO_forLab-ImproveFolder_1/MOPSOAidFunction.cpp">
+		<Unit filename="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/MOPSOAidFunction.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="/home/wangdi/MOPSO_forLab-ImproveFolder_1/MOPSOFunction.cpp">
+		<Unit filename="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/MOPSOFunction.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="/home/wangdi/MOPSO_forLab-ImproveFolder_1/Matrix.cpp">
+		<Unit filename="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/Matrix.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="/home/wangdi/MOPSO_forLab-ImproveFolder_1/applyVariables.cpp">
+		<Unit filename="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/applyVariables.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="/home/wangdi/MOPSO_forLab-ImproveFolder_1/checkSimilarity.cpp">
+		<Unit filename="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/checkSimilarity.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="/home/wangdi/MOPSO_forLab-ImproveFolder_1/coordinaryTransform.cpp">
+		<Unit filename="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/coordinaryTransform.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="/home/wangdi/MOPSO_forLab-ImproveFolder_1/createRep.cpp">
+		<Unit filename="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/createRep.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="/home/wangdi/MOPSO_forLab-ImproveFolder_1/disposedCodes.cpp">
+		<Unit filename="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/disposedCodes.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="/home/wangdi/MOPSO_forLab-ImproveFolder_1/fileDisposal.cpp">
+		<Unit filename="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/fileDisposal.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="/home/wangdi/MOPSO_forLab-ImproveFolder_1/freeUpSpace.cpp">
+		<Unit filename="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/freeUpSpace.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="/home/wangdi/MOPSO_forLab-ImproveFolder_1/initialization.cpp">
+		<Unit filename="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/initialization.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="/home/wangdi/MOPSO_forLab-ImproveFolder_1/inputParticles.cpp">
+		<Unit filename="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/inputParticles.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="/home/wangdi/MOPSO_forLab-ImproveFolder_1/main.cpp">
+		<Unit filename="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/main.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="/home/wangdi/MOPSO_forLab-ImproveFolder_1/matrixFunction.cpp">
+		<Unit filename="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/matrixFunction.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="/home/wangdi/MOPSO_forLab-ImproveFolder_1/multiplyBetterInput.cpp">
+		<Unit filename="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/multiplyBetterInput.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="/home/wangdi/MOPSO_forLab-ImproveFolder_1/parameterSettings.cpp">
+		<Unit filename="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/parameterSettings.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="/home/wangdi/MOPSO_forLab-ImproveFolder_1/preDispose.cpp">
+		<Unit filename="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/preDispose.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="/home/wangdi/MOPSO_forLab-ImproveFolder_1/randFixedSum.cpp">
+		<Unit filename="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/randFixedSum.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="/home/wangdi/MOPSO_forLab-ImproveFolder_1/seiveRep.cpp">
+		<Unit filename="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/seiveRep.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="/home/wangdi/MOPSO_forLab-ImproveFolder_1/setTime.cpp">
+		<Unit filename="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/setTime.cpp">
 			<Option target="version_2"/>
 		</Unit>
-		<Unit filename="/home/wangdi/MOPSO_forLab-ImproveFolder_1/CMakeLists.txt">
+		<Unit filename="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

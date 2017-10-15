@@ -1,7 +1,7 @@
 #include "MOPSO.h"
 
 //  the address of the input data
-const char rootAddress[] = "/home/wangdi/mopso/";
+const char rootAddress[] = "/home/advanced/实验环境/mopso/";
 const char *energyFileAddress = catStrStr(rootAddress, "data/energyFile/");
 const char *tempFileAddress   = catStrStr(energyFileAddress, "tempFile/");
 const char *defaultFileAddress = catStrStr(energyFileAddress, "defaultFile/");
@@ -27,7 +27,7 @@ const double VarMin = -180;
 //const double VelMax = 0.7;             //  =20 without rama_map
 
 // MOPSO Settings
-const int tidSize =2;
+const int tidSize =8;
 const int objectiveNumber = 3; //  Multiple Obejectives settings, the size of objective function
 const double TM_scoreThreshold = 0.13;
 const int nRep = 50;                // Repository Size

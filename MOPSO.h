@@ -161,6 +161,7 @@ double getSRD(double **f, int k, int size);
 // unitize 归一化
 void unitFunction(double **f, int n, int m);
 
+bool comp_deleteArray(const int &a, const int &b);
 
     //  get the w
 double getInertiaWeight(double it,double MaxIt);
@@ -259,6 +260,7 @@ void becomeInitialParticle(Particle &particle);
 
 //free up space
 void freeUpSpace(Particle *& particle);
+void freeUpSpace(double **f, int rowsize);
 
 // apply variables
 void applyVariable();

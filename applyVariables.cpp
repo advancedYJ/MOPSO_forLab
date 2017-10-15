@@ -14,7 +14,7 @@ void applyVariable(){
     particle = new Particle[Population];                       // Population = inputFilesNumber + multiplyFilesNumber
     angle = new ANGLE[nRep * 2  ];
     sortAns = new int[nRep * 2];
-    rep_count = new REP_COUNT[nRep + 100];
+    rep_count = new REP_COUNT[nRep * 2];
     angle[0].id = -1;
 
 }

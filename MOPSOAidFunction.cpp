@@ -125,6 +125,8 @@ int getGBest(Particle &particle, myRep &rep) {
             minSRD = tmp;
         }
     }
+
+    freeUpSpace(f, size+1);
     return  ans;
 }
 
@@ -149,6 +151,10 @@ void unitFunction(double **f, int n, int m){
     for (int i = 0; i < n; i++)
         for (int j = 0; j < m; j++)
             f[i][j] = (f[i][j] - minCost[j]) / (maxCost[j] - minCost[j]);
+}
+
+bool comp_deleteArray(const int &a, const int &b){
+    return a > b;
 }
 
 double getSRD(double **f, int k, int size) {
