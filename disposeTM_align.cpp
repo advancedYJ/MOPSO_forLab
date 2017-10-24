@@ -11,10 +11,10 @@
  * ...  if there's only 5 AA, then Position 11 refer to the last AA
  * so for not first nor last AA, (Kth_AA - 2) * 3 + 2, (Kth_AA - 2) * 3 + 3, (Kth_AA - 2) * 3 + 4 is Mth_Atom
  */
-void setVelMax(double *VelMax, const int &seq_AANum, const int &seqLen, const int &VelMax_Len) {
+void setVelMax(double *VelMax, const int &seq_AANum, const int &numAA, const int &VelMax_Len) {
     if (seq_AANum == 0) {       // the first AA
         VelMax[0] = VelMax[1] = VEL_SMALL_RANGE;
-    } else if (seq_AANum == seqLen - 1) {       //  the last AA
+    } else if (seq_AANum == numAA) {       //  the last AA
         VelMax[VelMax_Len - 1] = VEL_SMALL_RANGE;
     } else {    //  ordinary AA
         VelMax[(seq_AANum - 2) * 3 + 2] = VelMax[(seq_AANum - 2) * 3 + 3] = VelMax[(seq_AANum - 2) * 3 + 4] = VEL_SMALL_RANGE;
@@ -22,8 +22,8 @@ void setVelMax(double *VelMax, const int &seq_AANum, const int &seqLen, const in
 }
 
 void getVelMax_by_TMalign() {
-    const char *firstPdb_File = catStrIntStr(inputAddress, 1, ".pdb");
-    const char *secondPdb_File = catStrIntStr(inputAddress, 2, ".pdb");
+    const char *firstPdb_File  = catStrIntStr(inputAddress, firRep_for_TMalign, ".pdb");
+    const char *secondPdb_File = catStrIntStr(inputAddress, secRep_for_TMalign, ".pdb");
     const char *TMalign_output = catStrIntStr(inputAddress, "align", 1, ".txt");
     const char *command = catStrStr("cd ", TM_alignAddress, " && ./TMalign ", firstPdb_File, " ", secondPdb_File, " > ", TMalign_output);
     system(command);
@@ -72,10 +72,11 @@ void getVelMax_by_TMalign() {
             seq2_AANum++;
         if (referenceLine[i] == ':')
             if ( (seq1[i] == seq2[i]) && (seq1_AANum == seq2_AANum) ) {
-                setVelMax(VelMax, seq1_AANum, seqLen, VelMax_Len);
+                setVelMax(VelMax, seq1_AANum, numAA, VelMax_Len);
             }
     }
     //for (int i = 0; i < VelMax_Len; i++)
     //printf("i : %d v : %lf\n", i, VelMax[i]);
     inputFile.close();
+    removeFile(TMalign_output);
 }

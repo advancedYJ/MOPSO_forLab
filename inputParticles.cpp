@@ -11,6 +11,9 @@ void inputParticles(Particle *particle){
         //printParticle(&particle[i]);
     }  // input the particles data
     initializeParticles(particle);                 //  init the velocity, bestCost, bestPosition
+
+    // after input particles, we can delete file like "particle0.txt" "phi.txt"
+    removeMultiplyFile_afterInput();
 }
 
 void inputParticle(Particle &particle, int fileNum, char *seq){

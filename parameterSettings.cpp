@@ -24,7 +24,6 @@ const char *TM_alignAddress = catStrStr(rootAddress, "TMalign/");
 // MOPSO Settings
 const double VEL_SMALL_RANGE = 0.8;
 const double VEL_BIG_RANGE = 1.5;
-const int Population = 3;
 const int tidSize =8;
 const int objectiveNumber = 3; //  Multiple Obejectives settings, the size of objective function
 const double TM_scoreThreshold = 0.13;
@@ -33,16 +32,8 @@ const double Criterion = 0.000001;
 const int lambdaLoopTimes = 1000;
 
 // Problem Definition
-const int nVar = 183;
 const double angleMax = 180;
 const double angleMin = -180;
-//const double VelMax = 0.7;             //  =20 without rama_map
-
-
-const int answerRepNumber = 10;
-//const int  MaxIt = 1;          // Maximum Number of Iterations
-//const int Population = 2;                  // Population Size
-
 
 const double phi1 = 2.05;
 const double phi2 = 2.05;
@@ -52,19 +43,12 @@ const int bufferLen = 2048;
 
 const double wMin = chi;                        // =chi  Inertia Weight
 const double wMax = 1.2;
-const double wDamp=1;                       //  Inertia Weight Damping Ratio
 //const double c1 = chi*phi1;                 //  Personal Learning Coefficient
 //const double c2 = chi*phi2;                 //  Global Learning Coefficient
 const double c1max = 2.0;
 const double c1min = 0.5;
 const double c2max = 3.5;
 const double c2min = 0.8;
-
-
-const double Alpha = 0.1;       //Grid Inflation Parameter
-const int nGrid = 10;               //Number of Grids per each Dimension
-const int Beta = 4;                   //Leader Selection Pressure Parameter
-const int Gamma = 2;             // Extra (to be deleted) Repository Member Selection Pressure
 
 const double PI = M_PI;
 const double INF=100000000;

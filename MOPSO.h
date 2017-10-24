@@ -54,6 +54,7 @@ void inputParPhi(Particle &particle, int fileNum);
 void openFile(const char fileDir[10000], ifstream &infile);
     // a function that will remove file and throw error if it can't remove file
 void removeFile(const char * str);
+void removeMultiplyFile_afterInput();
 
     // for the object function
 void printPdb(Particle * particle);
@@ -177,7 +178,7 @@ void strReplace(char *src, const char *shortStr, const int start, const int leng
 
 int strToInt(char *str);
 
-int getInputParameter(char **argv, int &nPop, int &MaxIt);
+int getInputParameter(char **argv);
 
 int getMax(int a, int b);
 
@@ -281,7 +282,7 @@ void printOut(int option);
  * ...  if there's only 5 AA, then Position 11 refer to the last AA
  * so for not first nor last AA, (Kth_AA - 2) * 3 + 2, (Kth_AA - 2) * 3 + 3, (Kth_AA - 2) * 3 + 4 is Mth_Atom
  */
-void setVelMax(double *VelMax, const int &seq_AANum, const int &seqLen, const int &VelMax_Len);
+void setVelMax(double *VelMax, const int &seq_AANum, const int &numAA, const int &VelMax_Len);
 void getVelMax_by_TMalign();
 
 /*
@@ -481,10 +482,8 @@ extern const char *mybinAddress;
 extern const char *strideAddress;
 extern const char *TM_alignAddress;
 
-extern const int nVar;
 extern const double angleMin;
 extern const double angleMax ;
-extern const int VarSize[];
 extern const double VEL_SMALL_RANGE;
 extern const double VEL_BIG_RANGE;
 
@@ -492,16 +491,18 @@ extern const double VEL_BIG_RANGE;
 // MOPSO Settings
 extern int inputSize;                  // Population Size
 extern const int nRep;                // Repository Size
-extern const int Population;
+extern int Population;
+extern int firRep_for_TMalign;
+extern int secRep_for_TMalign;
 extern int  MaxIt;          // Maximum Number of Iterations
 extern int multiplyNumber; // copy the best input particle
 extern const double Criterion;
 extern const int lambdaLoopTimes;
 extern const int tidSize;
-extern const int answerRepNumber;
 extern time_t starTime;
 extern time_t endTime;
 extern char **argv;
+extern int startNum;
 
 extern const double phi1;
 extern const double phi2;
@@ -519,11 +520,6 @@ extern const double c1max;
 extern const double c1min;
 extern const double c2max;
 extern const double c2min;
-
-extern const double Alpha;       //Grid Inflation Parameter
-extern const int nGrid;               //Number of Grids per each Dimension
-extern const int Beta;                   //Leader Selection Pressure Parameter
-extern const int Gamma;             // Extra (to be deleted) Repository Member Selection Pressure
 
 extern const int objectiveNumber;      //  Multiple Objectives
 extern const double TM_scoreThreshold; // the threshold of TM-score

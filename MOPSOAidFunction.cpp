@@ -225,10 +225,17 @@ int strToInt(char *str){
     return ans;
 }
 
-// argv: [1]fold name, [2]number of particles, [3]loop times
-int getInputParameter(char **argv, int &nPop, int &MaxIt) {
-    nPop = strToInt(argv[2]);
+/*
+ [argv] <0>       <1>                           <2>                     <3>                 <4>                     <5.6>
+     ./AIR /home/advanced/Data/TR829    7                            3000                 50                    1 2
+       <input address>                 <standard particle numbers>   <iteration times>    <total population>    <2 reps for TM_align>
+*/
+int getInputParameter(char **argv) {
+    inputSize = strToInt(argv[2]);
     MaxIt = strToInt(argv[3]);
+    Population = strToInt(argv[4]);
+    firRep_for_TMalign = strToInt(argv[5]);
+    secRep_for_TMalign = strToInt(argv[6]);
 }
 
 int getMax(int a, int b){

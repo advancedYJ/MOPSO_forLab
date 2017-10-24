@@ -9,7 +9,7 @@ void multiplyBetterInput() {
     seq = inputSeq();//input seq
     for (int i=0; i < multiplyNumber; i++) {
         Particle particle;
-        inputParticle(particle, i % inputSize, seq);
+        inputParticle(particle, i % inputSize, seq);        // i % inputSize : copy different input particles averagely
         initializeParticle(particle);
         multiplyParticle(particle, Population - multiplyNumber + i);
     }

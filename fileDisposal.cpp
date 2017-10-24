@@ -86,6 +86,21 @@ void removeFile(const char * str){
     }
 }
 
+void removeMultiplyFile_afterInput(){
+    char *seqAddress = catStrStr(inputAddress, "seq.txt");
+    removeFile(seqAddress);
+    for (int i = 0; i < inputSize; i++){
+        char *prePhiAddress = catStrIntStr(inputAddress, "prePhi", i+1, ".txt");
+        removeFile(prePhiAddress);
+    }
+    for (int i = 0; i < Population; i++){
+        char *particleAddress = catStrIntStr(inputAddress, "particleO_", i+1, ".txt");
+        char *phiAddress = catStrIntStr(inputAddress, "phi", i+1, ".txt");
+        removeFile(particleAddress);
+        removeFile(phiAddress);
+    }
+
+}
 
 void printParticleCost(Particle * particle, int iterator){
     char *costFile = catStrStr(answerAddress, "cost.txt");
@@ -225,11 +240,6 @@ void printPdb(Particle * particle){
 
 void printPdb(list<Rep>::iterator it, const int &repNum) {
     //cout << "seq : " << it->seq << endl;
-    char *startNumberAddress = catStrStr(inputAddress, "startNumber");
-    ifstream inFile;
-    openFile(startNumberAddress, inFile);
-    int startNum;
-    inFile >> startNum;
 
     FILE * output;
     const char *filename = catStrIntStr(answerAddress, "rep", repNum, ".pdb");

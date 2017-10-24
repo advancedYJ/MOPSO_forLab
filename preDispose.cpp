@@ -12,12 +12,15 @@ char *logAddress;
 int  MaxIt;
 int multiplyNumber;
 char **argv;
+int Population;
+int firRep_for_TMalign;
+int secRep_for_TMalign;
+int startNum;
 
 void preDisposeInputParametersAndFiles(char **argv) {
-    // argv: [1]input address, [2]number of particles, [3]loop times
-    getInputParameter(argv, inputSize, MaxIt);
+    getInputParameter(argv);
     inputAddress = catStrStr(argv[1], "/");
-    answerAddress = catStrStr(argv[1], "Answer/");
+    answerAddress = catStrStr(argv[1], "Answer_", argv[5], argv[6],"/");
     logAddress = catStrStr(answerAddress, "log.txt");
     createNewFold();
     disposePDB();
@@ -26,9 +29,7 @@ void preDisposeInputParametersAndFiles(char **argv) {
 }
 
 void disposePDB(){
-    char *logAddress = catStrStr(answerAddress, "log.txt");
     createSeqTxt();
-
     for (int i=0;  i < inputSize; i++){
         createParticleTxt(i+1);
         createPhi(i+1);
@@ -73,11 +74,8 @@ void createParticleTxt(int k){
     atom = new Atom[cntLines+100];
     int atomNum;
     getAtom(atom, cntLines, atomNum, address);
-
-    // print the start number
-    char *startNumberAddress = catStrStr(inputAddress, "startNumber");
-    freopen(startNumberAddress, "w", stdout);
-    printf("%d\n", atom[0].number);
+    // get startNumber;
+    startNum =  atom[0].number;
 
     //  creat particle.txt
     char *particleAddress = catStrIntStr(inputAddress, "particleO_", k, ".txt");

@@ -2,9 +2,7 @@
 
 
 int main(int argc, char *argv[])
-//int main()
 {
-    //getArgv();                         // argv: [1]input address, [2]number of particles, [3]loop times
     setTime();
     preDisposeInputParametersAndFiles(argv);
     applyVariable();
@@ -34,5 +32,10 @@ int main(int argc, char *argv[])
 
 /*
 In linux terminate:
- ./AIR /home/advanced/Data/TR829 7 500
+      ./AIR /home/advanced/Data/TR829 7 3000 50 1 2
+ /*
+[argv]<0>       <1>                           <2>                     <3>                 <4>                     <5.6>
+     ./AIR /home/advanced/Data/TR829    7                            3000                 50                    1 2
+       <input address>                 <standard particle numbers>   <iteration times>    <total population>    <2 reps for TM_align>
+
  */
