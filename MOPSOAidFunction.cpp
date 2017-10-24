@@ -159,7 +159,7 @@ bool comp_deleteArray(const int &a, const int &b){
 
 double getSRD(double **f, int k, int size) {
     double ans = 0;
-    for (int i = 0; i < objectiveNumber; i++){
+    for (int i = 0; i < objectiveNumber-1; i++){
         ans += sqrt(fabs(f[size][i] - f[k][i]));        //  f[size][i] is the particle's cost
     }
     return ans;

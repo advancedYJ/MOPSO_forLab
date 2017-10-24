@@ -31,7 +31,7 @@ const int tidSize =8;
 const int objectiveNumber = 3; //  Multiple Obejectives settings, the size of objective function
 const double TM_scoreThreshold = 0.13;
 const int nRep = 50;                // Repository Size
-const int Population = 50;
+const int Population = 3;
 const double Criterion = 0.000001;
 const int lambdaLoopTimes = 1000;
 
@@ -51,9 +51,9 @@ const double wMax = 1.2;
 const double wDamp=1;                       //  Inertia Weight Damping Ratio
 //const double c1 = chi*phi1;                 //  Personal Learning Coefficient
 //const double c2 = chi*phi2;                 //  Global Learning Coefficient
-const double c1max = 0.7;
-const double c1min = 0.4;
-const double c2max = 1.3;
+const double c1max = 2.0;
+const double c1min = 0.5;
+const double c2max = 3.0;
 const double c2min = 0.8;
 
 

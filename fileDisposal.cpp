@@ -23,6 +23,7 @@ void getAtom(Atom *atom, int cntLines, int &atomNum, char *address) {
     char judge[bufferLen];
     atomNum = 0;
     for (int i=0; i<cntLines; i++){
+        strcpy(judge, "");              //  bug : if the last line is "", then judge is not read a new "", but remain the old value
         scanf("%s", judge);
 
         if (strcmp(judge, "ATOM") == 0){
@@ -223,6 +224,7 @@ void printPdb(Particle * particle){
 }
 
 void printPdb(list<Rep>::iterator it, const int &repNum) {
+    //cout << "seq : " << it->seq << endl;
     char *startNumberAddress = catStrStr(inputAddress, "startNumber");
     ifstream inFile;
     openFile(startNumberAddress, inFile);

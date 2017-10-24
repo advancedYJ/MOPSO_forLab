@@ -58,6 +58,7 @@ void createSeqTxt(){
         }
     }
     printf("\n");
+
 }
 
 void createParticleTxt(int k){

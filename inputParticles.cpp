@@ -6,7 +6,7 @@
 
 void inputParticles(Particle *particle){
     char *seq;
-    seq = inputSeq();                                               //input seq
+    seq = inputSeq();//input seq
 
     int SeqLen = static_cast<int>(strlen(seq));
     if (SeqLen > 250)

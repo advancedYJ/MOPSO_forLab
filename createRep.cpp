@@ -21,14 +21,15 @@ void putNewParticleIntoRep(Particle * particle, myRep & rep, int iterator){
                 tmp.addO_origin = new double [particle[i].sizeOfAddO_origin];
                 tmp.Position = new double [particle[i].sizeOfPosition];
                 tmp.Cost = new double [objectiveNumber];
-                tmp.seq = new char [sizeof(particle[i].seq)];
+                tmp.seq = new char [strlen(particle[i].seq)];  //not sizeof(particle[i].seq) !!
                 tmp.sizeOfAddO_origin = particle[i].sizeOfAddO_origin;
                 tmp.iterator = iterator;
                 tmp.numAA = particle[i].numAA;
-                memcpy(tmp.seq, particle[i].seq, sizeof(particle[i].seq));
+                strcpy(tmp.seq, particle[i].seq);
                 cpyDoubleArray(tmp.addO_origin, particle[i].addO_origin, particle[i].sizeOfAddO_origin);
                 cpyDoubleArray(tmp.Position, particle[i].Position, particle[i].sizeOfPosition);
                 cpyDoubleArray(tmp.Cost, particle[i].Cost, objectiveNumber);
+                cout << "seq : " << tmp.seq << endl;
                 rep.push_back(tmp);
             }
         }

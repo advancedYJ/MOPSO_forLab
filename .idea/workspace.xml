@@ -53,28 +53,28 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+            <state relative-caret-position="176">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createRep.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="inputParticles.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inputParticles.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createRep.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/createRep.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1425">
-              <caret line="83" column="97" lean-forward="false" selection-start-line="83" selection-start-column="97" selection-end-line="83" selection-end-column="97" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="applyVariables.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/applyVariables.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+            <state relative-caret-position="413">
+              <caret line="23" column="95" lean-forward="false" selection-start-line="23" selection-start-column="95" selection-end-line="23" selection-end-column="95" />
               <folding />
             </state>
           </provider>
@@ -83,18 +83,18 @@
       <file leaf-file-name="fileDisposal.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fileDisposal.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7920">
-              <caret line="360" column="6" lean-forward="false" selection-start-line="360" selection-start-column="6" selection-end-line="360" selection-end-column="6" />
+            <state relative-caret-position="340">
+              <caret line="226" column="6" lean-forward="false" selection-start-line="226" selection-start-column="6" selection-end-line="226" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="preDispose.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="preDispose.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/preDispose.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+            <state relative-caret-position="318">
+              <caret line="130" column="5" lean-forward="false" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -103,8 +103,8 @@
       <file leaf-file-name="parameterSettings.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parameterSettings.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+            <state relative-caret-position="339">
+              <caret line="46" column="10" lean-forward="false" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -113,7 +113,7 @@
       <file leaf-file-name="MOPSOFunction.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MOPSOFunction.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
+            <state relative-caret-position="2222">
               <caret line="101" column="12" lean-forward="false" selection-start-line="101" selection-start-column="12" selection-end-line="101" selection-end-column="12" />
               <folding />
             </state>
@@ -123,9 +123,11 @@
       <file leaf-file-name="MOPSO.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MOPSO.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="823">
-              <caret line="161" column="12" lean-forward="false" selection-start-line="161" selection-start-column="12" selection-end-line="161" selection-end-column="12" />
-              <folding />
+            <state relative-caret-position="308">
+              <caret line="534" column="7" lean-forward="false" selection-start-line="534" selection-start-column="7" selection-end-line="534" selection-end-column="7" />
+              <folding>
+                <element signature="e#33#52#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -143,8 +145,8 @@
       <file leaf-file-name="MOPSOAidFunction.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MOPSOAidFunction.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="868">
-              <caret line="157" column="1" lean-forward="false" selection-start-line="157" selection-start-column="1" selection-end-line="157" selection-end-column="1" />
+            <state relative-caret-position="318">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -154,8 +156,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>predi</find>
-      <find>particle[j]</find>
       <find>filenum</find>
       <find>draft</find>
       <find>cd</find>
@@ -184,6 +184,8 @@
       <find>cat</find>
       <find>free</find>
       <find>aid</find>
+      <find>gey</find>
+      <find>createS</find>
     </findStrings>
     <replaceStrings>
       <replace>particle</replace>
@@ -208,17 +210,17 @@
         <option value="$PROJECT_DIR$/Matrix.cpp" />
         <option value="$PROJECT_DIR$/seiveRep.cpp" />
         <option value="$PROJECT_DIR$/initialization.cpp" />
-        <option value="$PROJECT_DIR$/inputParticles.cpp" />
         <option value="$PROJECT_DIR$/multiplyBetterInput.cpp" />
         <option value="$PROJECT_DIR$/MOPSOFunction.cpp" />
-        <option value="$PROJECT_DIR$/preDispose.cpp" />
-        <option value="$PROJECT_DIR$/parameterSettings.cpp" />
         <option value="$PROJECT_DIR$/applyVariables.cpp" />
-        <option value="$PROJECT_DIR$/fileDisposal.cpp" />
         <option value="$PROJECT_DIR$/freeUpSpace.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/MOPSO.h" />
         <option value="$PROJECT_DIR$/MOPSOAidFunction.cpp" />
+        <option value="$PROJECT_DIR$/parameterSettings.cpp" />
+        <option value="$PROJECT_DIR$/preDispose.cpp" />
+        <option value="$PROJECT_DIR$/inputParticles.cpp" />
+        <option value="$PROJECT_DIR$/fileDisposal.cpp" />
         <option value="$PROJECT_DIR$/createRep.cpp" />
       </list>
     </option>
@@ -231,10 +233,10 @@
   </component>
   <component name="OCFindUsagesOptions" text="false" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-49" />
-    <option name="y" value="11" />
-    <option name="width" value="980" />
-    <option name="height" value="1038" />
+    <option name="x" value="-1855" />
+    <option name="y" value="-4" />
+    <option name="width" value="1855" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -572,12 +574,13 @@
       <workItem from="1506235649155" duration="6938000" />
       <workItem from="1506422565536" duration="2426000" />
       <workItem from="1507964034825" duration="2488000" />
-      <workItem from="1508030845577" duration="2953000" />
+      <workItem from="1508030845577" duration="3969000" />
+      <workItem from="1508654514282" duration="6237000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203730000" />
+    <option name="totallyTimeSpent" value="210983000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -589,19 +592,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-49" y="11" width="1857" height="1092" extended-state="6" />
+    <frame x="-1855" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291367" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291367" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33992806" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298791" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41007194" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31225806" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -876,13 +879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inputParticles.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_list.h" />
     <entry file="file://$PROJECT_DIR$/multiplyBetterInput.cpp">
       <provider selected="true" editor-type-id="text-editor">
@@ -900,34 +896,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/preDispose.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/applyVariables.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parameterSettings.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fileDisposal.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7920">
-          <caret line="360" column="6" lean-forward="false" selection-start-line="360" selection-start-column="6" selection-end-line="360" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -942,40 +914,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MOPSOFunction.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
+        <state relative-caret-position="2222">
           <caret line="101" column="12" lean-forward="false" selection-start-line="101" selection-start-column="12" selection-end-line="101" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/parameterSettings.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        <state relative-caret-position="339">
+          <caret line="46" column="10" lean-forward="false" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MOPSOAidFunction.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="868">
-          <caret line="157" column="1" lean-forward="false" selection-start-line="157" selection-start-column="1" selection-end-line="157" selection-end-column="1" />
+        <state relative-caret-position="318">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inputParticles.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fileDisposal.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="226" column="6" lean-forward="false" selection-start-line="226" selection-start-column="6" selection-end-line="226" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MOPSO.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="823">
-          <caret line="161" column="12" lean-forward="false" selection-start-line="161" selection-start-column="12" selection-end-line="161" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="308">
+          <caret line="534" column="7" lean-forward="false" selection-start-line="534" selection-start-column="7" selection-end-line="534" selection-end-column="7" />
+          <folding>
+            <element signature="e#33#52#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/createRep.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="83" column="97" lean-forward="false" selection-start-line="83" selection-start-column="97" selection-end-line="83" selection-end-column="97" />
+        <state relative-caret-position="413">
+          <caret line="23" column="95" lean-forward="false" selection-start-line="23" selection-start-column="95" selection-end-line="23" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preDispose.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="130" column="5" lean-forward="false" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
           <folding />
         </state>
       </provider>
