@@ -15,6 +15,7 @@
 #include <stdexcept>
 #include <limits>
 #include <algorithm>
+#include <string>
 
 using namespace std;
 
@@ -73,7 +74,6 @@ void createNewFold();
 //  multiply better input
 void multiplyBetterInput();
 void multiplyParticle(Particle particle, int repNum);
-void get_VelMax(char *seq);
 
 void runScwrl(int index);                   //  run scwrl program after print .pdb
 void removeTmp(int index);
@@ -272,6 +272,18 @@ void releaseSpace(double *x);
 void printIn(int option);
 void printOut(int option);
 
+// disposeTMScore
+/*
+ * Position 0 and Position 1 refer to first AA while Position 1 is always 180
+ * Position 2 ,Position 3, Position 4 refer to second[2] AA while Position 4 is always 180
+ * Position 5 ,Position 6, Position 7 refer to third[3] AA while Position 7 is always 180
+ * Position 8 ,Position 9, Position 10 refer to fourth[4] AA while Position 10 is always 180
+ * ...  if there's only 5 AA, then Position 11 refer to the last AA
+ * so for not first nor last AA, (Kth_AA - 2) * 3 + 2, (Kth_AA - 2) * 3 + 3, (Kth_AA - 2) * 3 + 4 is Mth_Atom
+ */
+void setVelMax(double *VelMax, const int &seq_AANum, const int &seqLen, const int &VelMax_Len);
+void getVelMax_by_TMalign();
+
 /*
  * Matrix function
  */
@@ -453,6 +465,7 @@ Matrix<double> randFixedSum(int n, int m, _XD S, _XD a, _XD b);
 extern const char rootAddress[];
 extern char *inputAddress;
 extern char *logAddress;
+extern double *VelMax;
 extern const char *energyFileAddress;
 extern const char *tempFileAddress;
 extern const char *defaultFileAddress;
@@ -466,12 +479,14 @@ extern const char *scoreAddress;
 extern const char *databaseAddress;
 extern const char *mybinAddress;
 extern const char *strideAddress;
+extern const char *TM_alignAddress;
 
 extern const int nVar;
-extern const double VarMin;
-extern const double VarMax ;
+extern const double angleMin;
+extern const double angleMax ;
 extern const int VarSize[];
-extern double VelMax;             //  =20 without rama_map
+extern const double VEL_SMALL_RANGE;
+extern const double VEL_BIG_RANGE;
 
 
 // MOPSO Settings

@@ -5,7 +5,7 @@
 #include "MOPSO.h"
 
 int inputSize;               // Population = inputFilesNumber + multiplyFilesNumber
-double VelMax;
+double *VelMax;
 char *inputAddress;
 char *answerAddress;
 char *logAddress;
@@ -21,18 +21,20 @@ void preDisposeInputParametersAndFiles(char **argv) {
     logAddress = catStrStr(answerAddress, "log.txt");
     createNewFold();
     disposePDB();
-    freopen(logAddress, "w", stdout);
+    getVelMax_by_TMalign();
     multiplyNumber = Population - inputSize;
 }
 
 void disposePDB(){
+    char *logAddress = catStrStr(answerAddress, "log.txt");
     createSeqTxt();
+
     for (int i=0;  i < inputSize; i++){
         createParticleTxt(i+1);
         createPhi(i+1);
     }
-    char *logAddress = catStrStr(answerAddress, "log.txt");
-    freopen(logAddress, "w", stdout);
+
+
 }
 
 void createSeqTxt(){
@@ -58,6 +60,7 @@ void createSeqTxt(){
         }
     }
     printf("\n");
+    freopen(logAddress, "a", stdout);
 
 }
 
@@ -83,7 +86,7 @@ void createParticleTxt(int k){
         if (isImportantAtom(atom[i]))
             printf("%lf %lf %lf\n", atom[i].x-atom[0].x, atom[i].y-atom[0].y, atom[i].z-atom[0].z);
     }
-
+    freopen(logAddress, "a", stdout);
 
 }
 
@@ -126,6 +129,7 @@ void createPhi(int k){
     // last one
     scanf("%*s%*s%*s%*s%*s%*s%*s%lf%lf%*f%*s", &data1, &data2);
     printf("%lf\n", data1);
+    freopen(logAddress, "a", stdout);
 }
 
 bool isImportantAtom(const Atom atom){

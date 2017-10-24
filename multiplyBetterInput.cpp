@@ -7,7 +7,6 @@
 void multiplyBetterInput() {
     char *seq;
     seq = inputSeq();//input seq
-    get_VelMax(seq);                       //  get VelMax for multiplyParticle
     for (int i=0; i < multiplyNumber; i++) {
         Particle particle;
         inputParticle(particle, i % inputSize, seq);
@@ -55,14 +54,4 @@ void multiplyParticle(Particle particle, int repNum){
         outFileForPhi << particle.Position[j] << " ";
         outFileForPhi << particle.Position[j+2] << endl;
     }
-}
-
-void get_VelMax(char *seq) {
-    int SeqLen = static_cast<int>(strlen(seq));
-    if (SeqLen > 250)
-        VelMax = 0.5;
-    else if (SeqLen > 120)      // 120 - 250
-        VelMax = 0.8;
-    else
-        VelMax =1.2;
 }

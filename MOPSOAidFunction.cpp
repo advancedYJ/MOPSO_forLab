@@ -66,22 +66,22 @@ void cpyDoubleArray(double *& p1, double *& p2, int n){                //  p1,p2
 
 void checkV(double *tmp, int n){
     for (int i=0; i<n; i++) {
-        if (tmp[i] > VelMax) tmp[i] = VelMax;
-        else if (tmp[i] < -VelMax) tmp[i] = -VelMax;
+        if (tmp[i] > VelMax[i]) tmp[i] = VelMax[i];
+        else if (tmp[i] < -VelMax[i]) tmp[i] = -VelMax[i];
     }
 }
 
 void checkP(double *tmp, double *tmpV, int n){
     for (int i=0; i<n; i++)
-        if (tmp[i] > VarMax) {  tmp[i] = VarMax;  tmpV[i] = -tmpV[i]; }
-        else if (tmp[i] < VarMin)   {    tmp[i] = VarMin;    tmpV[i] = -tmpV[i]; }
+        if (tmp[i] > angleMax) {  tmp[i] = angleMax;  tmpV[i] = -tmpV[i]; }
+        else if (tmp[i] < angleMin)   {    tmp[i] = angleMin;    tmpV[i] = -tmpV[i]; }
     //  if the particle reach the boudary, v need to inverse
 }
 
 void checkOrigin(double *tmp, double *tmpV, int n){
     for (int i=0; i<n; i++)
-        if (tmp[i] > VarMax) {  tmp[i] = VarMax;  tmpV[i] = -tmpV[i]; }
-        else if (tmp[i] < VarMin)   {    tmp[i] = VarMin;    tmpV[i] = -tmpV[i]; }
+        if (tmp[i] > angleMax) {  tmp[i] = angleMax;  tmpV[i] = -tmpV[i]; }
+        else if (tmp[i] < angleMin)   {    tmp[i] = angleMin;    tmpV[i] = -tmpV[i]; }
     //  if the particle reach the boudary, v need to inverse
 }
 

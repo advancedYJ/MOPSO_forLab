@@ -13,6 +13,7 @@ const char *scoreAddress      = catStrStr(rootAddress, "rosetta/main/source/bin/
 const char *databaseAddress   = catStrStr(rootAddress, "rosetta/main/database/");
 const char *mybinAddress      = catStrStr(rootAddress, "calRWplus/");
 const char *strideAddress     = catStrStr(rootAddress, "stride/");
+const char *TM_alignAddress = catStrStr(rootAddress, "TMalign/");
 
 //const char *answerAddress     = catStrStr(rootAddress, "data/answer/newAnswer/");
 //const char *charmmFileAddress = catStrStr(energyFileAddress, "charmmFile/");
@@ -20,20 +21,23 @@ const char *strideAddress     = catStrStr(rootAddress, "stride/");
 //const char *inputAddress      = catStrStr(rootAddress, "data/input/originpdb/");
 //const char *mybinAddress      = catStrStr(rootAddress, "mybin/");
 
-// Problem Definition
-const int nVar = 183;
-const double VarMax = 180;
-const double VarMin = -180;
-//const double VelMax = 0.7;             //  =20 without rama_map
-
 // MOPSO Settings
+const double VEL_SMALL_RANGE = 0.8;
+const double VEL_BIG_RANGE = 1.5;
+const int Population = 3;
 const int tidSize =8;
 const int objectiveNumber = 3; //  Multiple Obejectives settings, the size of objective function
 const double TM_scoreThreshold = 0.13;
 const int nRep = 50;                // Repository Size
-const int Population = 3;
 const double Criterion = 0.000001;
 const int lambdaLoopTimes = 1000;
+
+// Problem Definition
+const int nVar = 183;
+const double angleMax = 180;
+const double angleMin = -180;
+//const double VelMax = 0.7;             //  =20 without rama_map
+
 
 const int answerRepNumber = 10;
 //const int  MaxIt = 1;          // Maximum Number of Iterations
@@ -53,7 +57,7 @@ const double wDamp=1;                       //  Inertia Weight Damping Ratio
 //const double c2 = chi*phi2;                 //  Global Learning Coefficient
 const double c1max = 2.0;
 const double c1min = 0.5;
-const double c2max = 3.0;
+const double c2max = 3.5;
 const double c2min = 0.8;
 
 

@@ -5,17 +5,7 @@
 #include "MOPSO.h"
 
 void inputParticles(Particle *particle){
-    char *seq;
-    seq = inputSeq();//input seq
-
-    int SeqLen = static_cast<int>(strlen(seq));
-    if (SeqLen > 250)
-        VelMax = 0.5;
-    else if (SeqLen > 120)      // 120 - 250
-        VelMax = 0.8;
-    else
-        VelMax =1.2;
-
+    char *seq = inputSeq();//input seq
     for (int i = 0; i < Population; i++) {
         inputParticle(particle[i], i, seq);
         //printParticle(&particle[i]);

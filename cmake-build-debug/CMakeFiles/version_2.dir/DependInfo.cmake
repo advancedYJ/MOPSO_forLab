@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/checkSimilarity.cpp" "/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/CMakeFiles/version_2.dir/checkSimilarity.cpp.o"
   "/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/coordinaryTransform.cpp" "/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/CMakeFiles/version_2.dir/coordinaryTransform.cpp.o"
   "/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/createRep.cpp" "/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/CMakeFiles/version_2.dir/createRep.cpp.o"
+  "/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/disposeTM_align.cpp" "/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/CMakeFiles/version_2.dir/disposeTM_align.cpp.o"
   "/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/disposedCodes.cpp" "/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/CMakeFiles/version_2.dir/disposedCodes.cpp.o"
   "/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/fileDisposal.cpp" "/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/CMakeFiles/version_2.dir/fileDisposal.cpp.o"
   "/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/freeUpSpace.cpp" "/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/cmake-build-debug/CMakeFiles/version_2.dir/freeUpSpace.cpp.o"

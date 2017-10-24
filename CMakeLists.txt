@@ -26,6 +26,6 @@ set(SOURCE_FILES
         freeUpSpace.cpp
         applyVariables.cpp
         Matrix.cpp
-        randFixedSum.cpp)
+        randFixedSum.cpp disposeTM_align.cpp)
 
 add_executable(version_2 ${SOURCE_FILES} setTime.cpp preDispose.cpp multiplyBetterInput.cpp disposedCodes.cpp seiveRep.cpp inputParticles.cpp Matrix.cpp randFixedSum.cpp)

@@ -6,7 +6,8 @@ Object =  coordinaryTransform.o    fileDisposal.o    initialization.o \
           MOPSOFunction.o    parameterSettings.o \
 	setTime.o     preDispose.o  multiplyBetterInput.o\
        	disposedCodes.o	 seiveRep.o  inputParticles.o  createRep.o\
-	checkSimilarity.o	Debug.o	freeUpSpace.o	applyVariables.o
+	checkSimilarity.o	Debug.o	freeUpSpace.o	applyVariables.o \
+	disposeTM_align.o
 
 AIR : $(Object)
 	g++ -o AIR *o -lpthread
@@ -49,6 +50,8 @@ Debug.o : MOPSO.h
 freeUpSpace.o : MOPSO.h
 
 applyVariables.o : MOPSO.h
+
+disposeTM_align.o : MOPSO.h
 
 .PHONY : clear
 clear :

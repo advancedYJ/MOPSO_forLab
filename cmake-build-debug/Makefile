@@ -339,6 +339,33 @@ createRep.cpp.s:
 	$(MAKE) -f CMakeFiles/version_2.dir/build.make CMakeFiles/version_2.dir/createRep.cpp.s
 .PHONY : createRep.cpp.s
 
+disposeTM_align.o: disposeTM_align.cpp.o
+
+.PHONY : disposeTM_align.o
+
+# target to build an object file
+disposeTM_align.cpp.o:
+	$(MAKE) -f CMakeFiles/version_2.dir/build.make CMakeFiles/version_2.dir/disposeTM_align.cpp.o
+.PHONY : disposeTM_align.cpp.o
+
+disposeTM_align.i: disposeTM_align.cpp.i
+
+.PHONY : disposeTM_align.i
+
+# target to preprocess a source file
+disposeTM_align.cpp.i:
+	$(MAKE) -f CMakeFiles/version_2.dir/build.make CMakeFiles/version_2.dir/disposeTM_align.cpp.i
+.PHONY : disposeTM_align.cpp.i
+
+disposeTM_align.s: disposeTM_align.cpp.s
+
+.PHONY : disposeTM_align.s
+
+# target to generate assembly for a file
+disposeTM_align.cpp.s:
+	$(MAKE) -f CMakeFiles/version_2.dir/build.make CMakeFiles/version_2.dir/disposeTM_align.cpp.s
+.PHONY : disposeTM_align.cpp.s
+
 disposedCodes.o: disposedCodes.cpp.o
 
 .PHONY : disposedCodes.o
@@ -723,6 +750,9 @@ help:
 	@echo "... createRep.o"
 	@echo "... createRep.i"
 	@echo "... createRep.s"
+	@echo "... disposeTM_align.o"
+	@echo "... disposeTM_align.i"
+	@echo "... disposeTM_align.s"
 	@echo "... disposedCodes.o"
 	@echo "... disposedCodes.i"
 	@echo "... disposedCodes.s"

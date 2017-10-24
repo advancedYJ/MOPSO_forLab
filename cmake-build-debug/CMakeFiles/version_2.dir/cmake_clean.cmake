@@ -20,6 +20,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/version_2.dir/applyVariables.cpp.o"
   "CMakeFiles/version_2.dir/Matrix.cpp.o"
   "CMakeFiles/version_2.dir/randFixedSum.cpp.o"
+  "CMakeFiles/version_2.dir/disposeTM_align.cpp.o"
   "version_2.pdb"
   "version_2"
 )

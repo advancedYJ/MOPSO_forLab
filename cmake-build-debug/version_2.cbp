@@ -114,6 +114,9 @@
 		<Unit filename="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/createRep.cpp">
 			<Option target="version_2"/>
 		</Unit>
+		<Unit filename="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/disposeTM_align.cpp">
+			<Option target="version_2"/>
+		</Unit>
 		<Unit filename="/home/advanced/Code/MOPSO_forLab-ImproveFolder_1/disposedCodes.cpp">
 			<Option target="version_2"/>
 		</Unit>
