@@ -9,18 +9,25 @@ void PSOAdaptionForPhi(Particle &particle, myRep &rep, int it) {
     myRep ::iterator a = rep.begin();
     for (int i=0; i<h; i++) a++;
     //  calculate the new Velocity
+    double tmp = acos(-2.0 * currentIteration_Times / times_for_each_play + 1) / PI;    // double tmp = acos(-2.0 * it / MaxIt + 1) / PI;
+    double c1 = c1max - (c1max - c1min) * (1 - tmp);
+    double c2 = c2min + (c2max - c2min) * (1 - tmp);
+    printf("it : %d  c1 : %lf  c2 : %lf\n", it, c1, c2);
     for (int i=0; i<len; i++){
         double r1 = rand() / double(RAND_MAX) , r2 = rand() / double(RAND_MAX) ;
-        double tmp = acos(-2 * it / MaxIt + 1) / PI;
-        double c1 = c1max - (c1max - c1min) * (1 - tmp);
-        double c2 = c2min + (c2max - c2min) * (1 - tmp);
         if(it==0 && i%3 != 1) particle.Velocity[i] = rand() / double(RAND_MAX);
         particle.Velocity[i] = w * particle.Velocity[i] +
                                c1 * r1* (particle.Best.Position[i] - particle.Position[i]) +
                                c2 * r2 * (a->Position[i] - particle.Position[i]);
     }
-    //  check velociti range
+    //  check velocity range
     checkV(particle.Velocity, len);
+
+    cout << "it : " << it << "print V:" <<   endl;
+    for (int i = 0; i < len; i++){
+        printf("V: %lf VelMax: %lf\n", particle.Velocity[i], VelMax[i]);
+    }
+    printf("\n");
 
     //  calculate the new position
     for (int i=0; i<len; i++)   particle.Position[i] += particle.Velocity[i];

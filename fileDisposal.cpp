@@ -9,6 +9,10 @@
 int getLines(char *address){
     // get the lines size of a file
     ifstream inFile(address);
+    if (!inFile.is_open()){
+        cout << "can't open " << address << endl;
+        exit(0);
+    }
     char buffer[bufferLen];
     int cntLines = 0;
     while (! inFile.eof()) { inFile.getline(buffer, bufferLen); cntLines++; }

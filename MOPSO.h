@@ -249,6 +249,7 @@ void createPhi(int k);
 bool isImportantAtom(const Atom atom);
 char getAbbreviation(char *str);
 void getArgv();
+void getParameters_for_TMalign();
 
 // check similarity
 void checkAllParticleSimilarity(Particle *particle);
@@ -282,8 +283,9 @@ void printOut(int option);
  * ...  if there's only 5 AA, then Position 11 refer to the last AA
  * so for not first nor last AA, (Kth_AA - 2) * 3 + 2, (Kth_AA - 2) * 3 + 3, (Kth_AA - 2) * 3 + 4 is Mth_Atom
  */
+void updateVelocityCheck(const int &iterationTimes);
 void setVelMax(double *VelMax, const int &seq_AANum, const int &numAA, const int &VelMax_Len);
-void getVelMax_by_TMalign();
+void getVelMax_by_TMalign(const int &firRep_for_TMalign, const int &secRep_for_TMalign);
 
 /*
  * Matrix function
@@ -484,16 +486,12 @@ extern const char *TM_alignAddress;
 
 extern const double angleMin;
 extern const double angleMax ;
-extern const double VEL_SMALL_RANGE;
-extern const double VEL_BIG_RANGE;
 
 
 // MOPSO Settings
 extern int inputSize;                  // Population Size
 extern const int nRep;                // Repository Size
 extern int Population;
-extern int firRep_for_TMalign;
-extern int secRep_for_TMalign;
 extern int  MaxIt;          // Maximum Number of Iterations
 extern int multiplyNumber; // copy the best input particle
 extern const double Criterion;
@@ -503,6 +501,11 @@ extern time_t starTime;
 extern time_t endTime;
 extern char **argv;
 extern int startNum;
+extern int numAA;
+extern int currentIteration_Times;
+extern int times_for_each_play;
+extern double VEL_SMALL_RANGE;
+extern double VEL_BIG_RANGE;
 
 extern const double phi1;
 extern const double phi2;

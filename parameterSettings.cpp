@@ -22,8 +22,6 @@ const char *TM_alignAddress = catStrStr(rootAddress, "TMalign/");
 //const char *mybinAddress      = catStrStr(rootAddress, "mybin/");
 
 // MOPSO Settings
-const double VEL_SMALL_RANGE = 0.8;
-const double VEL_BIG_RANGE = 1.5;
 const int tidSize =8;
 const int objectiveNumber = 3; //  Multiple Obejectives settings, the size of objective function
 const double TM_scoreThreshold = 0.13;
@@ -48,7 +46,7 @@ const double wMax = 1.2;
 const double c1max = 2.0;
 const double c1min = 0.5;
 const double c2max = 3.5;
-const double c2min = 0.8;
+const double c2min = 1.0;
 
 const double PI = M_PI;
 const double INF=100000000;

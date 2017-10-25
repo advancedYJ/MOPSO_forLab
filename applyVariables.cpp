@@ -9,6 +9,7 @@ ANGLE *angle;
 myRep rep;
 int *sortAns;
 REP_COUNT *rep_count;
+double *VelMax;
 
 void applyVariable(){
     particle = new Particle[Population];                       // Population = inputFilesNumber + multiplyFilesNumber
@@ -17,6 +18,7 @@ void applyVariable(){
     rep_count = new REP_COUNT[nRep * 2];
     angle[0].id = -1;
 
+    VelMax = new double [3 * numAA-3];
 }
 
 void releaseSpace(double **p, const int &n){

@@ -5,7 +5,6 @@
 #include "MOPSO.h"
 
 int inputSize;               // Population = inputFilesNumber + multiplyFilesNumber
-double *VelMax;
 char *inputAddress;
 char *answerAddress;
 char *logAddress;
@@ -13,19 +12,22 @@ int  MaxIt;
 int multiplyNumber;
 char **argv;
 int Population;
-int firRep_for_TMalign;
-int secRep_for_TMalign;
 int startNum;
+int numAA;
+int currentIteration_Times;
+int times_for_each_play;
+double VEL_SMALL_RANGE;
+double VEL_BIG_RANGE;
 
 void preDisposeInputParametersAndFiles(char **argv) {
     getInputParameter(argv);
     inputAddress = catStrStr(argv[1], "/");
-    answerAddress = catStrStr(argv[1], "Answer_", argv[5], argv[6],"/");
+    answerAddress = catStrStr(argv[1], "Answer/");
     logAddress = catStrStr(answerAddress, "log.txt");
     createNewFold();
     disposePDB();
-    getVelMax_by_TMalign();
     multiplyNumber = Population - inputSize;
+    getParameters_for_TMalign();
 }
 
 void disposePDB(){
@@ -170,3 +172,28 @@ void getArgv(){
     }
 }
 
+void getParameters_for_TMalign(){
+    int tmp = getLines(catStrStr(inputAddress, "particleO_1.txt"));
+    numAA = tmp/4;
+    const int divideNumber[7] = {0, 0, 1, 3, 6, 10, 15};                // 6C2 =15
+    int fileRange_for_TM_align = min(inputSize, 6);         // max for TM_align is 1.pdb, 2.pdb, ... , 6.pdb
+    times_for_each_play = MaxIt / divideNumber[fileRange_for_TM_align];           // MaxIt = 3000, inputSize=7, fileRange = 6
+    if (times_for_each_play == 0)        //  MaxIt < divideNumber
+        times_for_each_play = 1;
+
+    char *seq;
+    seq = inputSeq();//input seq
+    int len = static_cast<int>(strlen(seq));
+    if (len > 250){
+        VEL_BIG_RANGE = 0.5;
+        VEL_SMALL_RANGE = 0.3;
+    }
+    else if (len > 120){
+        VEL_BIG_RANGE = 0.8;
+        VEL_SMALL_RANGE = 0.4;
+    }
+    else{
+        VEL_BIG_RANGE = 1.2;
+        VEL_SMALL_RANGE = 0.5;
+    }
+}

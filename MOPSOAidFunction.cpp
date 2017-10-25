@@ -234,8 +234,6 @@ int getInputParameter(char **argv) {
     inputSize = strToInt(argv[2]);
     MaxIt = strToInt(argv[3]);
     Population = strToInt(argv[4]);
-    firRep_for_TMalign = strToInt(argv[5]);
-    secRep_for_TMalign = strToInt(argv[6]);
 }
 
 int getMax(int a, int b){
